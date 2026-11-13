@@ -1,0 +1,56 @@
+Stock Market Prediction Using Machine Learning
+
+Project Overview
+
+I developed a machine learning project to investigate whether historical financial indicators could predict stock price movements over the next five trading days. I analyzed more than 27,000 historical stock observations across 10 publicly traded companies using Python.
+
+Technologies Used
+
+- Python
+- Pandas and NumPy
+- Scikit-learn
+- Matplotlib
+- Yahoo Finance (yfinance)
+
+Machine Learning Models
+
+I developed and evaluated two machine learning models:
+
+- Logistic Regression: 59.28% accuracy
+- Random Forest: 58.95% accuracy
+
+I compared both models against a baseline accuracy of 59.28% and analyzed feature importance to identify relevant financial indicators.
+
+Financial Indicators Analyzed
+
+I incorporated several financial indicators, including:
+
+- 20-day and 50-day moving averages
+- Daily and weekly stock returns
+- Historical volatility
+- Trading volume
+
+Investment Strategy Backtesting
+
+I developed a stock selection strategy that ranked stocks based on their predicted probability of increasing in price.
+
+I compared the three highest-ranked stocks against an equally weighted portfolio of all 10 companies.
+
+Results:
+
+| Metric | ML Strategy | Benchmark |
+|---|---|---|
+| Average 5-Day Return | 0.79% | 0.69% |
+| Return Volatility | 2.96% | 2.01% |
+
+The machine learning strategy generated slightly higher average historical returns but also experienced greater volatility.
+
+Key Findings
+
+My results demonstrated that machine learning can be applied to financial data to evaluate investment opportunities. However, the models did not meaningfully outperform a simple classification baseline.
+
+The backtesting results were exploratory and did not account for transaction costs, overlapping holding periods, or the effects of refining models using the test period.
+
+Future Improvements
+
+I plan to explore additional financial indicators, company fundamentals, market sentiment, and more rigorous out-of-sample testing to improve model evaluation and investment strategy development.
